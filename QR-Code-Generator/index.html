@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QR Code Generator</title>
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+          <div class="row justify-content-center main-form">
+            <form>
+              <div class="form-group row">
+                  <label for="course" class="col-md-6 col-form-label">Course</label>
+                  <div class="col-md-6">
+                    <input type="text" id="course">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="sessionid" class="col-md-6 col-form-label">Session</label>
+                  <div class="col-md-6">
+                    <input id="session">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="instructorid" class="col-md-6 col-form-label">Instructor</label>
+                  <div class="col-md-6">
+                    <input id="instructor">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="password" class="col-md-6 col-form-label">Password</label>
+                  <div class="col-md-6">
+                    <input id="password">
+                  </div>
+                </div>
+            </form>
+          </div>    
+          
+          <div class="row generateButton">
+            <button type="submit" class="btn btn-dark generateButton" onclick="generateQR()">Generate QR</button>
+          </div>
+    
+          <div class="row qrDiv">
+            <div id="qr_display">
+            </div>
+          </div>
+      </div>
+                
+      <script src="qrcode.min.js"></script>
+      <script src="index.js"></script>
+    </body>
+</html>

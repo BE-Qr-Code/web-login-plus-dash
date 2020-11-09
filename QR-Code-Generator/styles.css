@@ -1,0 +1,12 @@
+.row{
+    justify-content: center;
+}
+
+.generateButton{
+    justify-content: center;
+}
+
+.main-form, .qrDiv{
+    margin-top: 30px;
+}
+

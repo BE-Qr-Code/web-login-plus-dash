@@ -1,1 +1,1 @@
-<?php header( 'Location: C:\wamp64\www\attendance\DbConnect.php' ) ;  ?>
+<?php header( 'Location: \attendance\DbConnect.php' ) ;  ?>

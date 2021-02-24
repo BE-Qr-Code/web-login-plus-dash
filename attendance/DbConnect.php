@@ -8,7 +8,7 @@
 // // $username = "root";
 // // $password = "";
 // // $database = "mydb";
-// $servername = "34.93.155.184";
+$servername = "34.93.155.184";
 $username = "root";
 $password = "apkove";
 $database = "test"; 
